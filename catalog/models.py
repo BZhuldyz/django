@@ -6,7 +6,7 @@ class Prepod(models.Model):
 	first_name = models.CharField(max_length=200, help_text = "Есімін енгізініз")
 	last_name = models.CharField(max_length=200, help_text = "Тегін енгізініз")
 	email = models.CharField(max_length=200, help_text = "Почта енгізініз")
-	kafedra = models.CharField(max_length=200, help_text = "Кафедра енгізініз")
+	kafedra = models.CharField((max_length=200, help_text = "Кафедра енгізініз"))
 
 	class Meta:
 		ordering = ["last_name", "first_name"]
